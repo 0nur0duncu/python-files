@@ -1,6 +1,3 @@
-To create a README.md file for your Python script, you can include information about the script, its purpose, and instructions on how to use it. Here's a basic template:
-
-```markdown
 # Python Script with PyODBC
 
 This Python script connects to a database using PyODBC, retrieves data, and prints it using pandas.
