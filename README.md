@@ -42,13 +42,7 @@ This Python script connects to a database using PyODBC, retrieves data, and prin
 1. Run the script:
 
    ```bash
-   python your_script.py
+   python pydb.py
    ```
 
 2. View the output, which includes the top 5 rows of the 'Orders' table and the SQL Server version.
-
-## Notes
-
-- Ensure that you have the necessary permissions and network access to connect to the specified database.
-
-Make sure to replace placeholders like `your_username`, `your_password`, `your_server`, etc., with your actual database connection details. Additionally, include the correct path to your script in the installation section. This README.md file provides a clear guide for users to set up and run your Python script.
