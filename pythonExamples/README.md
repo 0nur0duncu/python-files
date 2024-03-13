@@ -1,6 +1,3 @@
-Certainly! A README file is essential for explaining how to use your code, providing context, and offering any necessary information. Below is an example README file for your `ebob` and `ekok` functions:
-
-```markdown
 # EBOB ve EKOK Hesaplama
 
 Bu Python script'i, verilen iki sayının EBOB (En Büyük Ortak Bölgen) ve EKOK (En Küçük Ortak Kat) değerlerini hesaplamak için kullanılır.
