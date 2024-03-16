@@ -1,23 +1,17 @@
-error = 0.00000000001
+import numpy as np
+from Function_1 import F, FT, FTT
 
-def F(x):
-    return (x-1)**2*(x-2)*(x-3)
+xk = 0.5
+error = 1e-8
 
-def FT(x):
-    return 2*(x-1)*(x-2)*(x-3) + (x-1)**2*(2*x-5)
+delta_xk = -FT(xk) / FTT(xk)
+step = 0
 
-x0 = 0
-i = 0
-
-print("Starting point for the method= {:.6f}".format(x0))
-
-while True:
-    x = x0
-    x0 = x - F(x) / FT(x)
-    i += 1
-    print("{:d}. step, approximate value= {:.6f}".format(i, x0))
-
-    if abs(x0 - x) <= error:
-        break
-
-print("Approximate root = {:.6f}".format(x0))
+while FT(xk + delta_xk):
+  delta_xk = -FT(xk) / FTT(xk)
+  print(f"step={step}",f"xk={xk:.4f}",f"F(x{xk:.4f})={F(xk):.4f}",f"FT(x{xk:.4f})={FT(xk):.4f}",f"FTT({xk:.4f})={FTT(xk):.4f}",f"delta_xk={delta_xk:.4f}")
+  x = xk
+  xk = xk + delta_xk
+  step += 1
+  if abs(x - xk) <= error:
+    break
