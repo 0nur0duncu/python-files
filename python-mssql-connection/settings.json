@@ -1,0 +1,11 @@
+{
+  "Database_parameter": {
+    "Driver": "{SQL Server}",
+    "Server": "DESKTOP-?\\SQLEXPRESS",
+    "Database": "master",
+    "Username": "sa",
+    "Password": "1234",
+    "Trusted_Connection": "no",
+    "Encrypt": "no"
+  }
+}
